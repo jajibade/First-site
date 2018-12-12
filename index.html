@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JoyfulJoy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.container {
+    padding: 80px 120px;
+}
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+.person:hover {
+    border-color: #FF00FF;
+}
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+@media (max-width: 400px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+</style>
+</head>
+<body>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+   <div class="carousel-inner" role="listbox">
+     <div class="item active">
+       <img src="img/makeup table.jpg" alt="Makeup table" width="1200" height="700">
+       <div class="carousel-caption">
+         <h3>Beauty!</h3>
+         <p>"Beauty lies in healthy mind,body and spirit"</p>
+       </div>
+     </div>
+
+     <div class="item">
+       <img src="img/nigerian foods.jpg" alt="Nigerian" width="1200" height="700">
+       <div class="carousel-caption">
+         <h3>Nothing beats an african dish!</h3>
+         <p>Fried rice with chopped plantain..... Yummy!</p>
+       </div>
+     </div>
+
+     <div class="item">
+       <img src="img/jhene aiko.png" alt="Jhene" width="1200" height="700">
+       <div class="carousel-caption">
+         <h3>Musicians</h3>
+         <p>Plenty of soulful music artists, Jhene Aiko is one.</p>
+       </div>
+     </div>
+   </div>
+
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a>
+</div>
+<div class="container text-center">
+  <h3>JoyfulJoy</h3>
+  <p><em>Welcome to my website.</em></p>
+  <p>This is my personal blog, which consists of beauty,music and food and many more!</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class= "text-center"><strong>Beauty</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+      <img src="img/IMG_1745.JPG" class="img-circle" alt="Beauty" width="304" height= "236">
+    </a>
+    <div id="demo" class="collapse">
+      <p>Different Beauty looks</p>
+      <p>Favourite Beauty Brands</p>
+      <p>Click to find out.</p>
+    </div>
+  </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Food</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+      <img src="img/food.jpg" class="img-circle person" alt"Food" width "304" height="236">
+    </a>
+   <div id="demo2" class="collapse">
+     <p>Favourite Dishes</p>
+     <p>African food hacks!</p>
+     <p>Click to find out.</p>
+    </div>
+  </div>
+    <div class="col-sm-4">
+      <p class ="text-center"><strong>Music</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+      <img src="img/singing.jpg" class="img-circle person" alt="Music" width="304" height="236">
+    </a>
+   <div id="demo3" class="collapse">
+     <p>Music artists</p>
+     <p>Must listen!!</p>
+     <p>Click to find out.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
